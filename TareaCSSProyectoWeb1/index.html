@@ -1,0 +1,40 @@
+<!-- 
+    Document   : index
+    Created on : 
+    Author     : Web/It developers
+-->
+
+<!-- page contentType="text/html" pageEncoding="UTF-8" -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <jsp:include page="encabezado.jsp"></jsp:include>
+        <title>Aplicacion Web</title>
+    </head>
+    <body>
+        <h1>Ingreso al Sistema</h1>
+        <form name="ValidarUsuario" id="ValidarUsuario" action="ValidarUsuario" method="POST">
+        <table border="0">
+            
+            <tbody>
+                <tr>
+                    <td>Usuario:</td>
+                    <td><input type="text" name="Usuario" id="Usuario" value="" size="10" /></td>
+                </tr>
+                <tr>
+                    <td>Clave:</td>
+                    <td><input type="password" name="Clave" id="Clave" value="" size="10" /></td>
+                </tr>
+                 <tr>
+                     <td colspan="2"><input type="submit" value="Ingresar" name="ingresar" id="ingresar" /></td>     
+                </tr>
+            </tbody>
+        </table>
+        
+        </form>
+        
+
+    </body>
+</html>
