@@ -25,6 +25,10 @@ if($_POST) {
     if($_POST['accion'] === 'limpiar'){
         $oCarrito->eliminarCarrito();
     }
+
+    if($_POST['accion'] === 'actualizar'){
+        $oCarrito->actualizarCantidad($_POST['Modificar'],$_POST['Producto']);
+    }
 }
 
 ?>
@@ -53,9 +57,14 @@ if($_POST) {
                     <li>Producto:  <?php echo $aDatosProducto['modelo']; ?></li>
                     <li>Marca:     <?php echo $aDatosProducto['marca']; ?></li>
                     <li>Precio:    <?php echo $aDatosProducto['precio']; ?></li>
-                    <li>Cantidad:  <?php echo $aDatosProducto['cantidad']; ?></li>
-                    <li><form id="eliminarProducto-<?php echo $sIdProducto; ?>" action="carrito.php" method="post">
-                            <input name="idProductoXEliminar" type="text" value="<?php echo $sIdProducto; ?>">
+                    <li>  <form id="cantidad-<?php echo $cant = $aDatosProducto['cantidad']; ?>" action="carrito.php" method="post">
+                        Cantidad:   <input name="Modificar" type="number" value="<?php echo $cant;?>">
+                                    <input name="Producto" type="hidden value" value="<?php echo $aDatosProducto;?>">
+                                    <input name="accion" type="hidden" value="actualizar">
+                                    <input type="submit" value="Actualizar Cantidad" >
+                        </form></li>
+                    <li><form id="eliminarProducto-<?php echo $sIdProducto=$aDatosProducto['id']; ?>" action="carrito.php" method="post">
+                            <input name="idProductoXEliminar" type="hidden" value="<?php echo $sIdProducto; ?>">
                             <input name="accion" type="hidden" value="eliminar">
                             <input type="submit" value="Eliminar de Carrito">
 

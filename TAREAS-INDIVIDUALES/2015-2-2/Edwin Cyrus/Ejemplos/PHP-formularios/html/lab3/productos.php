@@ -48,7 +48,7 @@ if($_POST) {
                         <li>Precio: <?php echo $aDatosProducto['precio']; ?></li>
                         <li>
                             <form id="agregarProducto-<?php echo $sIdProducto; ?>" action="productos.php" method="post">
-                                <input name="idProductoXAgregar" type="text" value="<?php echo $sIdProducto; ?>">
+                                <input name="idProductoXAgregar" type="hidden" value="<?php echo $sIdProducto; ?>">
                                 <input name="accion" type="hidden" value="agregar">
                                 <input type="submit" value="Agregar a Carrito">
                             </form>

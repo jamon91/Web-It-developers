@@ -49,6 +49,14 @@ class Carrito {
         $_SESSION['carrito']= array();
     }
 
+    function actualizarCantidad($cantidad,$aTempCarrito){
+
+        
+
+
+
+    }
+
     /**
      * Retorna itemes de carro en el SESSION
      * @return array Itemes carro
