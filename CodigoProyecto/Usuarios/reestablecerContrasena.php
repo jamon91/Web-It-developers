@@ -9,7 +9,7 @@
 <html>
 <head>
     <title> Reestablecer Contrasena </title>
-    <link rel="stylesheet" href="/../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
 </head>
 <body onLoad="cursor()">
 <div class="container">

@@ -5,8 +5,8 @@
 		</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<!--Elabora por: Luis Acuna Pilarte-->
-		<!--Fecha de creación: 01/02/2015-->
-		<!--Ultima modificación: 01/02/2015-->
+		<!--Fecha de creaciï¿½n: 01/02/2015-->
+		<!--Ultima modificaciï¿½n: 01/02/2015-->
 		<script type='text/javascript' src='java/java.js'></script>
 	</head>
 	<body>
@@ -34,5 +34,5 @@
             </div>
 		</div>
 	</body>
-	<!-- Final de la página -->
+	<!-- Final de la pï¿½gina -->
 </html>
