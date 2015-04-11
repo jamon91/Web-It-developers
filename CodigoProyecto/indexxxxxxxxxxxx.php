@@ -4,7 +4,6 @@
 			Taller
 		</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<script type='text/javascript' src='java/java.js'></script>
 	</head>
 	<body>
 		<div class="container">

@@ -10,7 +10,7 @@
             <div class="decorate">
 			</div>
 			 <div class="menuContainer">
-                	<div class="button"><a href="portada.php">Usuarios</a></div>
+                	<div class="button"><a href="../menuUsuario.php">Usuarios</a></div>
                     <div class="button"><a href="modificarUsuario.php">Modificar Usuario</a></div>
                     <div class="button"><a href="consultarUsuario.php">Consultar Usuario</a></div>
                     <div class="button"><a href="reestablecerContrasena.php">Cambiar Contrase&ntilde;a</a></div>
@@ -36,8 +36,8 @@
 								<td><input type="text" id="txtApellido" name="txtApellido"/> </td>
 							</tr>
                             <tr>
-                                <td>Contrasena</td>
-                                <td><input type="text" id="txtContrasena" name="txtContrasena"/> </td>
+                                <td>Correo Electronico</td>
+                                <td><input type="text" id="txtCorreo" name="txtCorreo"/> </td>
                             </tr>
 							<tr>
 								<td>Tipo de Usuario</td>

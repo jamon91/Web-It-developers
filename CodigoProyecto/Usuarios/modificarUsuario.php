@@ -10,7 +10,7 @@
     <div class="decorate">
     </div>
     <div class="menuContainer">
-        <div class="button"><a href="portada.php">Usuarios</a></div>
+        <div class="button"><a href="../menuUsuario.php">Usuarios</a></div>
         <div class="button"><a href="registrarUsuario.php">Registrar Usuario</a></div>
         <div class="button"><a href="consultarUsuario.php">Consultar Usuario</a></div>
         <div class="button": black;><a href="reestablecerContrasena.php">Cambiar Contrase&ntilde;a</a></div>
@@ -21,6 +21,10 @@
             <legend>Ingreso de Informaci&oacuten para modificar el usuario</legend>
             <form action="" method="post" enctype="text/plain" id="formulario" name="formulario">
                 <table>
+                    <tr>
+                        <td>Ingrese el usuario</td>
+                        <td><input type="text" id="txtContrasena" name="txtContrasena"/> </td>
+                    </tr>
                     <tr>
                         <td>Estado del Usuario </td>
                         <br/>
@@ -46,7 +50,7 @@
 
                     <tr>
                         <td>
-                            <input type="button" name="txtEnviar" value="Registrar" onClick="Validar(formulario)"/>
+                            <input type="button" name="txtEnviar" value="Modificar" onClick="Validar(formulario)"/>
                             <input type="reset" name="txtLimpiar" value="Limpiar" onClick="PoneCursor()" />
                         </td>
                     </tr>
