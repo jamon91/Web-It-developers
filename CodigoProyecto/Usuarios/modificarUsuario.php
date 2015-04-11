@@ -1,3 +1,21 @@
+<?php
+require_once("../lib/Validation.php");
+if($_POST) {
+    $arrErrores = array();
+    var_dump($_POST);
+
+    $valCedula = Validation::noEstaVacio("Cedula",$_POST['cedula']);
+    if(is_array($valCedula)){
+        $arrErrores[] = $valCedula['mensajeError'];
+    }else {
+        $valCedulaFormato = Validation::esNumerico("Cedula", $_POST['cedula']);
+        if (is_array($valCedulaFormato)) {
+            $arrErrores[] = $valCedulaFormato['mensajeError'];
+        }
+    }
+}
+?>
+<!DOCTYPE html>
 <html>
 <head>
     <title> Modificar Usuario </title>
@@ -19,11 +37,11 @@
     <div class="interface">
         <fieldset>
             <legend>Ingreso de Informaci&oacuten para modificar el usuario</legend>
-            <form action="" method="post" enctype="text/plain" id="formulario" name="formulario">
+            <form name="frmCedula" method="post" action="modificarUsuario.php">
                 <table>
                     <tr>
-                        <td>Ingrese el usuario</td>
-                        <td><input type="text" id="txtContrasena" name="txtContrasena"/> </td>
+                        <td>Ingrese el numero de cedula</td>
+                        <td><input type="text" name="cedula"/> </td>
                     </tr>
                     <tr>
                         <td>Estado del Usuario </td>
@@ -50,11 +68,22 @@
 
                     <tr>
                         <td>
-                            <input type="button" name="txtEnviar" value="Modificar" onClick="Validar(formulario)"/>
+                            <input type="submit" value="Enviar Datos">
                             <input type="reset" name="txtLimpiar" value="Limpiar" onClick="PoneCursor()" />
                         </td>
                     </tr>
                 </table>
+                <?php if($_POST) { ?>
+                    <ul class="mensajeError">
+                        <?php
+                        if(sizeof($arrErrores) > 0){
+                            foreach($arrErrores as $strError) {
+                                echo("<li>$strError</li>");
+                            }
+                        }
+                        ?>
+                    </ul>
+                <?php } ?>
             </form>
         </fieldset>
     </div>

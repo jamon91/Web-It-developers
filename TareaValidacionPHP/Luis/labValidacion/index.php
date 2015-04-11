@@ -3,6 +3,7 @@ require_once("lib/Validation.php");
 if($_POST) {
     $arrErrores = array();
     var_dump($_POST);
+
     $valNombre = Validation::noEstaVacio("Nombre",$_POST['nombre']);
     if(is_array($valNombre)){
         $arrErrores[] = $valNombre['mensajeError'];
@@ -46,10 +47,9 @@ if($_POST) {
     if (is_array($valDireccionFormato)) {
         $arrErrores[] = $valDireccionFormato['mensajeError'];
     }
-
 }
-
 ?>
+
 <!DOCTYPE html>
 <html>
     <head lang="en">

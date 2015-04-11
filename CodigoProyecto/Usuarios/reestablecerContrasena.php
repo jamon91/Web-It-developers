@@ -1,4 +1,22 @@
-﻿<html>
+﻿<?php
+require_once("../lib/Validation.php");
+if($_POST) {
+    $arrErrores = array();
+    var_dump($_POST);
+
+    $valCedula = Validation::noEstaVacio("Cedula",$_POST['cedula']);
+    if(is_array($valCedula)){
+        $arrErrores[] = $valCedula['mensajeError'];
+    }else {
+        $valCedulaFormato = Validation::esNumerico("Cedula", $_POST['cedula']);
+        if (is_array($valCedulaFormato)) {
+            $arrErrores[] = $valCedulaFormato['mensajeError'];
+        }
+    }
+}
+?>
+<!DOCTYPE html>
+<html>
 <head>
     <title> Reestablecer Contrase&ntilde;a </title>
     <link rel="stylesheet" href="../css/style.css" type="text/css">
@@ -19,21 +37,30 @@
     <div class="interface">
         <fieldset>
             <legend>Ingreso de Informaci&oacuten para reestablecer la Contrase&ntilde;a de un usuario</legend>
-
-            <form action="mailto:danny-2688@hotmail.com" method="post" enctype="text/plain" id="formulario" name="formulario">
-
+            <form name="frmCedula" method="post" action="reestablecerContrasena.php">
                 <table>
                     <tr>
                         <td>Ingrese el Numero de Cedula</td>
-                        <td><input type="text" id="txtCedula" name="txtCedula"/> </td>
+                        <td><input type="text" id="cedula" name="cedula"/> </td>
                     </tr>
                     <tr>
                         <td>
-                            <input type="button" name="txtEnviar" value="Crear Contrasena" onClick="Validar(formulario)"/>
+                            <input type="submit" value="Enviar Datos">
                             <input type="reset" name="txtLimpiar" value="Limpiar" onClick="PoneCursor()" />
                         </td>
                     </tr>
                 </table>
+                <?php if($_POST) { ?>
+                    <ul class="mensajeError">
+                        <?php
+                        if(sizeof($arrErrores) > 0){
+                            foreach($arrErrores as $strError) {
+                                echo("<li>$strError</li>");
+                            }
+                        }
+                        ?>
+                    </ul>
+                <?php } ?>
             </form>
         </fieldset>
     </div>
