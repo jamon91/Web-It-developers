@@ -1,15 +1,7 @@
-<!--
-	Elaborado por: 					Luis Acuna Pilarte.
-	Fecha de creación:    			Jueves 21 de Junio de 2012
-	Fecha de ultima modificación: 	Jueves 21 de Junio de 2012 -- 10:24 p.m.
-	Versión:						1.0.0.0
-	Proyecto 1
--->
-
-<html> 
+<html>
 	<head>
 		 <title> Mantenimiento de usuarios </title>
-        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
 	</head>
 	<body onLoad="cursor()">
     	<div class="container">
@@ -20,12 +12,13 @@
 			 <div class="menuContainer">
                 	<div class="button"><a href="portada.php">Usuarios</a></div>
                     <div class="button"><a href="modificarUsuario.php">Modificar Usuario</a></div>
-                    <div class="button"><a href="consultarUsuario.php">Estado Usuario</a></div>
-                    <div class="button"><a href="reestablecerContrasena.php">Restablecer Contrasena</a></div>
+                    <div class="button"><a href="consultarUsuario.php">Consultar Usuario</a></div>
+                    <div class="button"><a href="reestablecerContrasena.php">Cambiar Contrase&ntilde;a</a></div>
              </div>
+			</br>
             <div class="interface">
 				<fieldset>
-					<legend>Ingreso de Informaci&oacuten</legend>
+					<legend>Ingreso de Informaci&oacuten para registrar un usuario</legend>
 					
 					<form action="" method="post" enctype="text/plain" id="formulario" name="formulario">
 					
@@ -70,6 +63,10 @@
 			</div> 
 		</div>	
 	</body>
+	<div id="footer">
+		<p>
+			Web/It Developers
+		</p>
 </html>
 
 

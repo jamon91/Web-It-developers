@@ -4,9 +4,6 @@
 			Taller
 		</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<!--Elabora por: Luis Acuna Pilarte-->
-		<!--Fecha de creaci�n: 01/02/2015-->
-		<!--Ultima modificaci�n: 01/02/2015-->
 		<script type='text/javascript' src='java/java.js'></script>
 	</head>
 	<body>

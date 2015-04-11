@@ -1,14 +1,6 @@
-﻿<!-- 
-	Elaborado por: 					Luis Acuna Pilarte.
-	Fecha de creación:    			Jueves 21 de Junio de 2012
-	Fecha de ultima modificación: 	Jueves 21 de Junio de 2012 -- 10:24 p.m.
-	Versión:						1.0.0.0
-	Proyecto 1
--->
-
-<html>
+﻿<html>
 <head>
-    <title> Reestablecer Contrasena </title>
+    <title> Reestablecer Contrase&ntilde;a </title>
     <link rel="stylesheet" href="../css/style.css" type="text/css">
 </head>
 <body onLoad="cursor()">
@@ -19,13 +11,14 @@
     </div>
     <div class="menuContainer">
         <div class="button"><a href="portada.php">Usuarios</a></div>
-        <div class="button"><a href="registrarUsuario.php">Restablecer Contrasena</a></div>
+        <div class="button"><a href="registrarUsuario.php">Registrar Usuario</a></div>
         <div class="button"><a href="modificarUsuario.php">Modificar Usuario</a></div>
-        <div class="button"><a href="consultarUsuario.php">Estado Usuario</a></div>
+        <div class="button"><a href="consultarUsuario.php">Consultar Usuario</a></div>
     </div>
+    </br>
     <div class="interface">
         <fieldset>
-            <legend>Ingreso de Informaci&oacuten</legend>
+            <legend>Ingreso de Informaci&oacuten para reestablecer la Contrase&ntilde;a de un usuario</legend>
 
             <form action="mailto:danny-2688@hotmail.com" method="post" enctype="text/plain" id="formulario" name="formulario">
 
@@ -46,4 +39,8 @@
     </div>
 </div>
 </body>
+<div id="footer">
+    <p>
+        Web/It Developers
+    </p>
 </html>
