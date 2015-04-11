@@ -32,7 +32,7 @@ $dbh->exec($sql);
 echo "New record created successfully<br/>";
 
 
-            $sql = 'SELECT idUsuario, Nombre, Password FROM carrito';
+            $sql = 'SELECT idUsuario,Nombre,Password FROM Usuario';
 
 
             foreach ($dbh->query($sql) as $row) {
