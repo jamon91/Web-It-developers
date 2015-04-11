@@ -1,5 +1,11 @@
 <?php
 require_once("../lib/Validation.php");
+require_once("../lib/ConnectordeDatos.php");
+
+
+   // ConectordeBD::registrarUsuario($_POST['cedula'],00,$_POST['nombre'],$_POST['apellido'],$_POST['email'],$_POST['estado']);
+
+
 if($_POST) {
     $arrErrores = array();
     var_dump($_POST);

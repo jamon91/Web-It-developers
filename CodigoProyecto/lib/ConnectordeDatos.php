@@ -7,23 +7,23 @@ class ConectordeBD
     private static $user = "root";
     private static $password = "hola123";
     private static $dbh;
-    private static $db = "BTIC-25";
+    private static $db = "Proyecto Web";
 
 
-    private static function abrirConexion()
+    public static function abrirConexion()
     {
         try {
             //armar String de conexion
             //modificar el string de conexion para que funcione con su base de datos
-            self:: $dbh = new PDO("mysql:host=self::$host;dbname= self::$db", self::$user, self::$password);
+            self:: $dbh = new PDO("mysql:host=$host;dbname= $db", self::$user, self::$password);
             echo "Success";
 
 
         } catch (PDOException $e) {
             echo $e->getTraceAsString();
-            print "Error!: " .
-            echo $e->getMessage(); . "<br/>";
-            die();
+           /* print "Error!: " .
+           echo $e->getMessage(); . "<br/>";
+            die();*/
         }
     }
 
@@ -53,7 +53,7 @@ class ConectordeBD
     {
 
         $dbh->query($sql);
-        return echo "Solicitud ejecutada exitosmente";
+        return "Solicitud ejecutada exitosmente";
 
     }
 

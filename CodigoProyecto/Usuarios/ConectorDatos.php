@@ -12,7 +12,7 @@
      $user = "root";
      $password = "hola123";
      $dbh;
-     $db = "ProyectoWeb";
+     $db = "Proyecto Web";
 
 
 
