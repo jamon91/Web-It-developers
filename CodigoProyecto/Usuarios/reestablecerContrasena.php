@@ -1,6 +1,12 @@
 ﻿<?php
 require_once("../lib/Validation.php");
+require_once("../lib/ConnectordeDatos.php");
+
+
+
 if($_POST) {
+
+
     $arrErrores = array();
     var_dump($_POST);
 

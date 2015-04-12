@@ -68,9 +68,12 @@ class ConectordeBD
 
     public  static function buscarUsuario($id){
         try {
+
             self:: $dbh = new PDO("mysql:host=" . self::$host . ";dbname=" . self::$db, self::$user, self::$password);
-            $sql = 'SELECT nombre , apellido FROM Usuario WHERE idUsuario="$id"';
+            $sql = 'SELECT Nombre , Apellido , Estado , Tipo  FROM Usuario WHERE idUsuario="$id"';
             self::$dbh->query($sql);
+
+
         }catch (PDOException $e){
 
             return $var='fallo';
@@ -84,6 +87,10 @@ class ConectordeBD
             $sql = "UPDATE Usuario.
                   SET Estado = '$estado' , TipoUsuario = '$tipoUsuario'.
                   WHERE idUsuario= $id";
+
+            $dbh->exec($sql);
+
+
         }catch (PDOException $e){
             return $var='fallo';
         }

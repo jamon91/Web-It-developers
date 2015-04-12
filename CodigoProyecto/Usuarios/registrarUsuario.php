@@ -2,20 +2,21 @@
 require_once("../lib/Validation.php");
 require_once("../lib/ConnectordeDatos.php");
 
-
-
-if($_POST) {
-    if ($_POST['accion'] === 'agregar') {
-     $var=ConectordeBD::registrarUsuario($_POST['cedula'], $_POST['nombre'], $_POST['apellido'], $_POST['email'], $_POST['sltGradoAcademico']);
-
-echo $var;
-    }
-
-}
+/*
+ *
+ */
 
 if($_POST) {
     $arrErrores = array();
     var_dump($_POST);
+
+    // conecta base de datos y envia parametros para insertar a la tabla.
+    if ($_POST['accion'] === 'agregar') {
+        $var=ConectordeBD::registrarUsuario($_POST['cedula'], $_POST['nombre'], $_POST['apellido'], $_POST['email'], $_POST['sltGradoAcademico']);
+
+        echo $var;
+    }
+
 
     $valCedula = Validation::noEstaVacio("Cedula",$_POST['cedula']);
     if(is_array($valCedula)){

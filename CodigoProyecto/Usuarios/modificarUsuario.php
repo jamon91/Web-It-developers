@@ -1,6 +1,11 @@
 <?php
 require_once("../lib/Validation.php");
 if($_POST) {
+
+    if($_POST['accion']=== 'modificar'){
+
+        ConectordeBD::modificarUsuario($_POST['cedula'],$_POST['estadoUsuario'],$_POST['tipoPuesto']);
+    }
     $arrErrores = array();
     var_dump($_POST);
 
@@ -47,7 +52,7 @@ if($_POST) {
                         <td>Estado del Usuario </td>
                         <br/>
                         <td>
-                            <select name="TipoPuesto" id="TipoPuesto">
+                            <select name="estadoUsuario" id="TipoPuesto">
                                 <option value="Puesto">--Seleccionar Puesto--</option>
                                 <option value="Habilitado">Activo</option>
                                 <option value="Deshabilitado">Inactivo</option>
@@ -58,7 +63,7 @@ if($_POST) {
                         <td>Nuevo tipo de Usuario</td>
                         <br/>
                         <td>
-                            <select name="TipoPuesto" id="TipoPuesto">
+                            <select name="tipoPuesto" id="TipoPuesto">
                                 <option value="Puesto">--Seleccionar Puesto--</option>
                                 <option value="Administrador">Administrador</option>
                                 <option value="Operador">Operador</option>
@@ -70,6 +75,7 @@ if($_POST) {
                         <td>
                             <input type="submit" value="Enviar Datos">
                             <input type="reset" name="txtLimpiar" value="Limpiar" onClick="PoneCursor()" />
+                            <input type="hidden" name="accion" value="modificar"/>
                         </td>
                     </tr>
                 </table>
