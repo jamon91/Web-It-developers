@@ -12,7 +12,6 @@ class Validation {
     static $validationErrors;
     /* no lo necesitamos
     function __construct() {
-
     }
     */
 
@@ -25,10 +24,9 @@ class Validation {
         if(!$contenido || strlen($contenido) === 0){
 
             return array('resultado'=>false,
-                'mensajeError' => "El campo $nombreCampo está vacío",
+                'mensajeError' => "El campo $nombreCampo est&aacute vac&iacuteo",
                 'campoDelError' => $nombreCampo
             );
-
         }
         return true;
     }
@@ -45,7 +43,7 @@ class Validation {
         }
         else {
             return array('resultado' => false,
-                'mensajeError' => "El formato del campo $nombreCampo es inválido no debe de llevar caracteres especiales.",
+                'mensajeError' => "El formato del campo $nombreCampo es inv&aacutelido no debe de llevar caracteres especiales.",
                 'campoDelError' => $nombreCampo
             );
         }

@@ -47,10 +47,10 @@ if($_POST) {
                         <td>Estado del Usuario </td>
                         <br/>
                         <td>
-                            <select name="sltGradoAcademico" id="sltGradoAcademico">
-                                <option value="GRADO">--Seleccionar Puesto--</option>
-                                <option value="gerencia">Activo</option>
-                                <option value="resepcionista">Inactivo</option>
+                            <select name="TipoPuesto" id="TipoPuesto">
+                                <option value="Puesto">--Seleccionar Puesto--</option>
+                                <option value="Habilitado">Activo</option>
+                                <option value="Deshabilitado">Inactivo</option>
                             </select>
                         </td>
                     </tr>
@@ -58,10 +58,10 @@ if($_POST) {
                         <td>Nuevo tipo de Usuario</td>
                         <br/>
                         <td>
-                            <select name="sltGradoAcademico" id="sltGradoAcademico">
-                                <option value="GRADO">--Seleccionar Puesto--</option>
-                                <option value="gerencia">Administrador</option>
-                                <option value="resepcionista">Operador</option>
+                            <select name="TipoPuesto" id="TipoPuesto">
+                                <option value="Puesto">--Seleccionar Puesto--</option>
+                                <option value="Administrador">Administrador</option>
+                                <option value="Operador">Operador</option>
                             </select>
                         </td>
                     </tr>
