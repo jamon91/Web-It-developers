@@ -91,10 +91,10 @@ if($_POST) {
                         <td>Tipo de Usuario</td>
                         <br/>
                         <td>
-                            <select name="sltGradoAcademico" id="sltGradoAcademico">
-                                <option value="GRADO">--Seleccionar Puesto--</option>
-                                <option value="gerencia">Administrador</option>
-                                <option value="resepcionista">Operador</option>
+                            <select name="TipoPuesto" id="TipoPuesto">
+                                <option value="Puesto">--Seleccionar Puesto--</option>
+                                <option value="Administrador">Administrador</option>
+                                <option value="Operador">Operador</option>
                             </select>
                         </td>
                     </tr>
