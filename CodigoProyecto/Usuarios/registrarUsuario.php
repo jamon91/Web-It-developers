@@ -3,8 +3,15 @@ require_once("../lib/Validation.php");
 require_once("../lib/ConnectordeDatos.php");
 
 
-   // ConectordeBD::registrarUsuario($_POST['cedula'],00,$_POST['nombre'],$_POST['apellido'],$_POST['email'],$_POST['estado']);
 
+if($_POST) {
+    if ($_POST['accion'] === 'agregar') {
+     $var=ConectordeBD::registrarUsuario($_POST['cedula'], $_POST['nombre'], $_POST['apellido'], $_POST['email'], $_POST['sltGradoAcademico']);
+
+echo $var;
+    }
+
+}
 
 if($_POST) {
     $arrErrores = array();
@@ -104,11 +111,12 @@ if($_POST) {
                             </select>
                         </td>
                     </tr>
-
                     <tr>
                         <td>
+                            <input name="accion" type="hidden" value="agregar">
                             <input type="submit" value="Enviar Datos">
                             <input type="reset" name="txtLimpiar" value="Limpiar" onClick="PoneCursor()" />
+
                         </td>
                     </tr>
                 </table>
@@ -120,6 +128,9 @@ if($_POST) {
                                 echo("<li>$strError</li>");
                             }
                         }
+
+
+
                         ?>
                     </ul>
                 <?php } ?>
