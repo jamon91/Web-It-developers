@@ -67,11 +67,27 @@ class ConectordeBD
     }
 
     public  static function buscarUsuario($id){
+
+            $row = array();
+
         try {
 
             self:: $dbh = new PDO("mysql:host=" . self::$host . ";dbname=" . self::$db, self::$user, self::$password);
-            $sql = 'SELECT Nombre , Apellido , Estado , Tipo  FROM Usuario WHERE idUsuario="$id"';
-            self::$dbh->query($sql);
+            $sql = "SELECT Nombre , Apellido , Estado , TipoUsuario  FROM Usuario WHERE idUsuario="."$id";
+
+
+           foreach(self::$dbh->query($sql) as $row){
+
+               print  "id " . $id . "\n";
+               print  "Nombre " . $row['Nombre'] . "\n";
+               print  "Apellido " . $row['Apellido'] . "\n";
+               print  "Estado " . $row['Estado'] . "\n";
+               print  "Puesto " . $row['TipoUsuario'] . "\n";
+                   }
+
+            return $row;
+
+
 
 
         }catch (PDOException $e){
