@@ -12,7 +12,9 @@ if($_POST) {
 
     // conecta base de datos y envia parametros para insertar a la tabla.
     if ($_POST['accion'] === 'agregar') {
-        $var=ConectordeBD::registrarUsuario($_POST['cedula'], $_POST['nombre'], $_POST['apellido'], $_POST['email'], $_POST['sltGradoAcademico']);
+      //  $var=ConectordeBD::registrarUsuario($_POST['cedula'], $_POST['nombre'], $_POST['apellido'], $_POST['email'], $_POST['sltGradoAcademico']);
+       $one = 66;
+        $var=ConectordeBD::removerUsuario($one);
 
         echo $var;
     }

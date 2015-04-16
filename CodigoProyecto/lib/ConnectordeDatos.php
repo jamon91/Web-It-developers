@@ -17,7 +17,7 @@ class ConectordeBD
             echo "Success";
             //armar String de conexion
             //modificar el string de conexion para que funcione con su base de datos
-            self:: $dbh = new PDO("mysql:host=localhost;dbname= ProyectoWeb", self::$user, self::$password);
+            self:: $dbh = new PDO("mysql:host=".self::$host.";dbname=".self::$db, self::$user, self::$password);
 
 
 
@@ -149,6 +149,15 @@ class ConectordeBD
             print $row['nombre'] . "\n";
 
         }
+    }
+
+
+    static function removerUsuario ($id){
+        self::abrirConexion();
+        $sql = "DELETE FROM Usuario WHERE IdUsuario="."$id";
+        self::$dbh->query($sql);
+        return "Se removio el usuario Exitosamente";
+
     }
 }
 
