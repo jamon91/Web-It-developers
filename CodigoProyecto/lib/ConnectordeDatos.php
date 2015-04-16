@@ -17,7 +17,7 @@ class ConectordeBD
             echo "Success";
             //armar String de conexion
             //modificar el string de conexion para que funcione con su base de datos
-            self:: $dbh = new PDO("mysql:host=localhost;dbname= ProyectoWeb", self::$user, self::$password);
+            self:: $dbh = new PDO("mysql:host=".self::$host.";dbname=".self::$db, self::$user, self::$password);
 
 
 
@@ -67,11 +67,27 @@ class ConectordeBD
     }
 
     public  static function buscarUsuario($id){
+
+            $row = array();
+
         try {
 
             self:: $dbh = new PDO("mysql:host=" . self::$host . ";dbname=" . self::$db, self::$user, self::$password);
-            $sql = 'SELECT Nombre , Apellido , Estado , Tipo  FROM Usuario WHERE idUsuario="$id"';
-            self::$dbh->query($sql);
+            $sql = "SELECT Nombre , Apellido , Estado , TipoUsuario  FROM Usuario WHERE idUsuario="."$id";
+
+
+           foreach(self::$dbh->query($sql) as $row){
+
+               print  "id " . $id . "\n";
+               print  "Nombre " . $row['Nombre'] . "\n";
+               print  "Apellido " . $row['Apellido'] . "\n";
+               print  "Estado " . $row['Estado'] . "\n";
+               print  "Puesto " . $row['TipoUsuario'] . "\n";
+                   }
+
+            return $row;
+
+
 
 
         }catch (PDOException $e){
@@ -133,6 +149,15 @@ class ConectordeBD
             print $row['nombre'] . "\n";
 
         }
+    }
+
+
+    static function removerUsuario ($id){
+        self::abrirConexion();
+        $sql = "DELETE FROM Usuario WHERE IdUsuario="."$id";
+        self::$dbh->query($sql);
+        return "Se removio el usuario Exitosamente";
+
     }
 }
 

@@ -1,6 +1,63 @@
 <?php
 
 
+<<<<<<< HEAD
+=======
+if($_POST) {
+    $arrErrores = array();
+    var_dump($_POST);
+
+    // conecta base de datos y envia parametros para insertar a la tabla.
+    if ($_POST['accion'] === 'agregar') {
+      //  $var=ConectordeBD::registrarUsuario($_POST['cedula'], $_POST['nombre'], $_POST['apellido'], $_POST['email'], $_POST['sltGradoAcademico']);
+       $one = 66;
+        $var=ConectordeBD::removerUsuario($one);
+
+        echo $var;
+    }
+
+
+    $valCedula = Validation::noEstaVacio("Cedula",$_POST['cedula']);
+    if(is_array($valCedula)){
+        $arrErrores[] = $valCedula['mensajeError'];
+    }else {
+        $valCedulaFormato = Validation::esNumerico("Cedula", $_POST['cedula']);
+        if (is_array($valCedulaFormato)) {
+            $arrErrores[] = $valCedulaFormato['mensajeError'];
+        }
+    }
+
+    $valNombre = Validation::noEstaVacio("Nombre",$_POST['nombre']);
+    if(is_array($valNombre)){
+        $arrErrores[] = $valNombre['mensajeError'];
+    }else {
+        $valNombreFormato = Validation::esSoloAlfa("Nombre", $_POST['nombre']);
+        if (is_array($valNombreFormato)) {
+            $arrErrores[] = $valNombreFormato['mensajeError'];
+        }
+    }
+
+    $valApellido = Validation::noEstaVacio("Apellido",$_POST['apellido']);
+    if(is_array($valApellido)){
+        $arrErrores[] = $valApellido['mensajeError'];
+    }else {
+        $valApellidoFormato = Validation::esSoloAlfa("Apellido", $_POST['apellido']);
+        if (is_array($valApellidoFormato)) {
+            $arrErrores[] = $valApellidoFormato['mensajeError'];
+        }
+    }
+
+    $valEmail = Validation::noEstaVacio("Email", $_POST['email']);
+    if(is_array($valEmail)) {
+        $arrErrores[] = $valEmail['mensajeError'];
+    }else {
+        $valEmailFormato = Validation::esEmail("Email", $_POST['email']);
+        if(is_array($valEmailFormato)) {
+            $arrErrores[] = $valEmailFormato['mensajeError'];
+        }
+    }
+}
+>>>>>>> 3794ca6be08d742c49d19fa7d9787e601728653e
 ?>
 
 <!DOCTYPE html>
