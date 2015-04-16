@@ -27,7 +27,7 @@
             </tr>
             <tr>
                 <th><h2>Configuraciones</h2></th>
-                <th><a href="Usuarios/modificarUsuario.php"><img src="imag/ir.jpg"title="	"></a></th>
+                <th><a href="Configuraciones/VMConfiguracion.php"><img src="imag/ir.jpg"title="	"></a></th>
             </tr>
             <tr>
                 <th><h2>Respaldos</h2></th>
