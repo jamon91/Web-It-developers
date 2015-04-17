@@ -1,5 +1,8 @@
 <?php
-
+	//echo shell_exec('sh /var/www/BITIC-25/BITIC-PROYECTO-WEB-1-2015-1/Ejemplos/PHP-formularios/html/Web-It-developers/CodigoProyecto/Configuraciones/MaquinaVirtual.sh');
+    //echo shell_exec("MaquinaVirtual");
+    echo shell_exec(escapeshellcmd('/var/www/BITIC-25/BITIC-PROYECTO-WEB-1-2015-1/Ejemplos/PHP-formularios/html/Web-It-developers/CodigoProyecto/Configuraciones/MaquinaVirtual.sh'));
+    echo " test";
 ?>
 
 <!DOCTYPE html>
