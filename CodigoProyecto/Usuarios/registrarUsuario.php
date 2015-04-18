@@ -1,19 +1,17 @@
 <?php
 
 
-<<<<<<< HEAD
-=======
 if($_POST) {
     $arrErrores = array();
     var_dump($_POST);
 
     // conecta base de datos y envia parametros para insertar a la tabla.
     if ($_POST['accion'] === 'agregar') {
-      //  $var=ConectordeBD::registrarUsuario($_POST['cedula'], $_POST['nombre'], $_POST['apellido'], $_POST['email'], $_POST['sltGradoAcademico']);
-       $one = 66;
-        $var=ConectordeBD::removerUsuario($one);
-
+        $var=ConectordeBD::registrarUsuario($_POST['cedula'], $_POST['nombre'], $_POST['apellido'], $_POST['email'], $_POST['sltGradoAcademico']);
+        /*$one = 66;
+        $var=ConectordeBD::removerUsuario($one);*/
         echo $var;
+
     }
 
 
@@ -57,7 +55,7 @@ if($_POST) {
         }
     }
 }
->>>>>>> 3794ca6be08d742c49d19fa7d9787e601728653e
+
 ?>
 
 <!DOCTYPE html>
