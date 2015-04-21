@@ -141,15 +141,7 @@ class ConectordeBD
     }
 
 
-    function getMarca($dbh)
-    {
-        $sql = 'SELECT id_marca , nombre FROM marca';
-        foreach ($dbh->query($sql) as $row) {
-            print $row['ID'] . "\t";
-            print $row['nombre'] . "\n";
 
-        }
-    }
 
 
     static function removerUsuario ($id){
