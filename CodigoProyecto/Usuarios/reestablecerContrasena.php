@@ -34,7 +34,7 @@ if($_POST) {
     <div class="decorate">
     </div>
     <div class="menuContainer">
-        <div class="button"><a href="../menuUsuario.php">Usuarios</a></div>
+        <div class="button"><a href="../menuUsuario.php">Men&uacuten de Usuarios</a></div>
         <div class="button"><a href="registrarUsuario.php">Registrar Usuario</a></div>
         <div class="button"><a href="modificarUsuario.php">Modificar Usuario</a></div>
         <div class="button"><a href="consultarUsuario.php">Consultar Usuario</a></div>

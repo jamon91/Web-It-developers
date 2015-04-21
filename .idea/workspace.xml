@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c14cda2c-169d-4d8f-ae06-14a864c398b9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/Web-It-developers.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodigoProyecto/index.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodigoProyecto/indexxxxxxxxxxxx.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodigoProyecto/Usuarios/consultarUsuario.php" afterPath="$PROJECT_DIR$/CodigoProyecto/Usuarios/consultarUsuario.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodigoProyecto/menuPrincipal.php" afterPath="$PROJECT_DIR$/CodigoProyecto/menuPrincipal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodigoProyecto/menuRespaldos.php" afterPath="$PROJECT_DIR$/CodigoProyecto/menuRespaldos.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodigoProyecto/menuUsuario.php" afterPath="$PROJECT_DIR$/CodigoProyecto/menuUsuario.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodigoProyecto/Usuarios/modificarUsuario.php" afterPath="$PROJECT_DIR$/CodigoProyecto/Usuarios/modificarUsuario.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodigoProyecto/Usuarios/reestablecerContrasena.php" afterPath="$PROJECT_DIR$/CodigoProyecto/Usuarios/reestablecerContrasena.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodigoProyecto/Usuarios/registrarUsuario.php" afterPath="$PROJECT_DIR$/CodigoProyecto/Usuarios/registrarUsuario.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Web-It-developers.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,6 +46,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="menuRespaldos.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodigoProyecto/menuRespaldos.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-19.166666" vertical-offset="320" max-vertical-offset="870">
+              <caret line="52" column="7" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ConectorDatos.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CodigoProyecto/Usuarios/ConectorDatos.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -58,8 +72,8 @@
       <file leaf-file-name="consultarUsuario.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CodigoProyecto/Usuarios/consultarUsuario.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1110">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-18.75" vertical-offset="0" max-vertical-offset="1110">
+              <caret line="30" column="84" selection-start-line="30" selection-start-column="84" selection-end-line="30" selection-end-column="84" />
               <folding />
             </state>
           </provider>
@@ -68,28 +82,58 @@
       <file leaf-file-name="modificarUsuario.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CodigoProyecto/Usuarios/modificarUsuario.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1605">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-14.791667" vertical-offset="170" max-vertical-offset="1605">
+              <caret line="35" column="80" selection-start-line="35" selection-start-column="80" selection-end-line="35" selection-end-column="80" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reestablecerContrasena.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="reestablecerContrasena.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CodigoProyecto/Usuarios/reestablecerContrasena.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1260">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.48909092" vertical-offset="361" max-vertical-offset="1260">
+              <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="registrarUsuario.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="registrarUsuario.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CodigoProyecto/Usuarios/registrarUsuario.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.14354067" vertical-offset="0" max-vertical-offset="2295">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state vertical-scroll-proportion="-3.9166667" vertical-offset="1031" max-vertical-offset="2280">
+              <caret line="75" column="84" selection-start-line="75" selection-start-column="61" selection-end-line="75" selection-end-column="84" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menuUsuario.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodigoProyecto/menuUsuario.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-16.666666" vertical-offset="320" max-vertical-offset="870">
+              <caret line="48" column="7" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodigoProyecto/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-21.125" vertical-offset="243" max-vertical-offset="840">
+              <caret line="50" column="7" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menuPrincipal.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodigoProyecto/menuPrincipal.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-21.666666" vertical-offset="215" max-vertical-offset="825">
+              <caret line="49" column="7" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -100,6 +144,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/CodigoProyecto/indexxxxxxxxxxxx.php" />
+        <option value="$PROJECT_DIR$/CodigoProyecto/index.php" />
+        <option value="$PROJECT_DIR$/CodigoProyecto/menuPrincipal.php" />
+        <option value="$PROJECT_DIR$/CodigoProyecto/menuUsuario.php" />
+        <option value="$PROJECT_DIR$/CodigoProyecto/menuRespaldos.php" />
+        <option value="$PROJECT_DIR$/CodigoProyecto/Usuarios/registrarUsuario.php" />
+        <option value="$PROJECT_DIR$/CodigoProyecto/Usuarios/modificarUsuario.php" />
+        <option value="$PROJECT_DIR$/CodigoProyecto/Usuarios/consultarUsuario.php" />
+        <option value="$PROJECT_DIR$/CodigoProyecto/Usuarios/reestablecerContrasena.php" />
+      </list>
+    </option>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
@@ -108,7 +167,7 @@
     <option name="x" value="-1" />
     <option name="y" value="24" />
     <option name="width" value="1368" />
-    <option name="height" value="602" />
+    <option name="height" value="721" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -192,9 +251,32 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="c14cda2c-169d-4d8f-ae06-14a864c398b9" name="Default" comment="" />
@@ -205,7 +287,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="24" width="1368" height="602" extended-state="6" />
+    <frame x="-1" y="24" width="1368" height="721" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -269,34 +351,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodigoProyecto/Usuarios/consultarUsuario.php">
+    <entry file="file://$PROJECT_DIR$/CodigoProyecto/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1110">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-21.125" vertical-offset="243" max-vertical-offset="840">
+          <caret line="50" column="7" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodigoProyecto/Usuarios/modificarUsuario.php">
+    <entry file="file://$PROJECT_DIR$/CodigoProyecto/menuPrincipal.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1605">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-21.666666" vertical-offset="215" max-vertical-offset="825">
+          <caret line="49" column="7" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodigoProyecto/Usuarios/reestablecerContrasena.php">
+    <entry file="file://$PROJECT_DIR$/CodigoProyecto/menuRespaldos.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1260">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-19.166666" vertical-offset="320" max-vertical-offset="870">
+          <caret line="52" column="7" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodigoProyecto/menuUsuario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.666666" vertical-offset="320" max-vertical-offset="870">
+          <caret line="48" column="7" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CodigoProyecto/Usuarios/registrarUsuario.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14354067" vertical-offset="0" max-vertical-offset="2295">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state vertical-scroll-proportion="-3.9166667" vertical-offset="1031" max-vertical-offset="2280">
+          <caret line="75" column="84" selection-start-line="75" selection-start-column="61" selection-end-line="75" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodigoProyecto/Usuarios/modificarUsuario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.791667" vertical-offset="170" max-vertical-offset="1605">
+          <caret line="35" column="80" selection-start-line="35" selection-start-column="80" selection-end-line="35" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodigoProyecto/Usuarios/consultarUsuario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.75" vertical-offset="0" max-vertical-offset="1110">
+          <caret line="30" column="84" selection-start-line="30" selection-start-column="84" selection-end-line="30" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodigoProyecto/Usuarios/reestablecerContrasena.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48909092" vertical-offset="361" max-vertical-offset="1260">
+          <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
           <folding />
         </state>
       </provider>
