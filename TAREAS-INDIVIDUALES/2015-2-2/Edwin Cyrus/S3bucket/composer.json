@@ -2,7 +2,7 @@
 
   "autoload":{
      "classmap": [
-        "S3bucket"
+        "../app"
      ]
   }
 }

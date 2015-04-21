@@ -10,7 +10,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 
  // /Composer Bucket/s3-php5-curl/vendor
 //include the S3 class
-//if (!class_exists('S3'))require_once('S3.php');
+//if (!class_exists('S3')) require_once('../app/S3.php');
 
 //AWS access info
 if (!defined('awsAccessKey')) define('awsAccessKey', 'AKIAI26AC2GGSZ6CAL4A');
