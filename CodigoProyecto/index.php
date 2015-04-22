@@ -16,14 +16,20 @@
 
 <body>
 	<div class="container">
+
 		<div class="header">
+
 			</br>
 			<h1>Login para la aplicaci&oacuten CLIMA</h1>
+
 		</div>
+
 		<div class="decorate">
+
 		</div>
+
 		<div class="incioSesion">
-			<form action="FormularioV1.html" id="frmStandart" method="get" enctype="text/plain" >
+			<form action="menuPrincipal.php" id="frmStandart" method="get" enctype="text/plain" >
 				<table align="center">
 					<tr>
 						<td>Usuario:</td>
@@ -42,6 +48,11 @@
 				</table>
 			</form>
 		</div>
+
+		<div class="imag">
+
+		</div>
+
 	</div>
 	<p>
 		Web/It Developers
