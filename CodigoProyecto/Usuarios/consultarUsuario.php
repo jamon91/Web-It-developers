@@ -1,8 +1,15 @@
 <?php
 require_once("../lib/Validation.php");
+require_once("../lib/ConnectordeDatos.php");
 if($_POST) {
     $arrErrores = array();
-    var_dump($_POST);
+
+
+    if($_POST['accion']=== 'buscar' ){
+
+        $rows= ConectordeBD::buscarUsuario($_POST['cedula']);
+
+    }
 
     $valCedula = Validation::noEstaVacio("Cedula",$_POST['cedula']);
     if(is_array($valCedula)){
@@ -44,23 +51,39 @@ if($_POST) {
                             <td><input type="text" name="cedula"/> </td>
                         </tr>
                     </table>
+                    <input type="hidden" value="buscar" name="accion">
                     <input type="submit" value="Enviar Datos">
                 </form>
-            </fieldset>
-            <?php if($_POST) { ?>
-                <ul class="mensajeError">
-                    <?php
-                    if(sizeof($arrErrores) > 0){
-                        foreach($arrErrores as $strError) {
-                            echo("<li>$strError</li>");
+                <?php if($_POST) { ?>
+                    <ul class="mensajeError">
+                        <?php
+                        if(sizeof($arrErrores) > 0){
+                            foreach($arrErrores as $strError) {
+                                echo("<li>$strError</li>");
+                            }
+                        }else{
+
+                            foreach($rows as $row) {
+
+                                echo "*ID: {$row["idUsuario"]}<br>";
+                                echo "*Nombre: {$row["Nombre"]}<br>";
+                                echo "*Apellido: {$row["Apellidos"]}<br>";
+                                echo "*Estado: {$row["Estado"]}<br>";
+                            }
+
+
                         }
-                    }
-                    ?>
-                </ul>
-            <?php } ?>
+                        ?>
+                    </ul>
+                <?php } ?>
+              </fieldset>
+
         </div>
         </div>
     </div>
+
+
+
 </body>
 <div id="footer">
     <p>

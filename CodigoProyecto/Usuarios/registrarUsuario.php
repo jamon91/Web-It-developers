@@ -1,16 +1,17 @@
 <?php
 
+require_once("../lib/Validation.php");
+require_once("../lib/ConnectordeDatos.php");
+
 if($_POST) {
     $arrErrores = array();
-    var_dump($_POST);
+
 
     // conecta base de datos y envia parametros para insertar a la tabla.
     if ($_POST['accion'] === 'agregar') {
-        $var=ConectordeBD::registrarUsuario($_POST['cedula'], $_POST['nombre'], $_POST['apellido'], $_POST['email'], $_POST['sltGradoAcademico']);
+        $var=ConectordeBD::registrarUsuario($_POST['cedula'], $_POST['nombre'], $_POST['apellido'], $_POST['email'], $_POST['TipoPuesto']);
+        $rows=ConectordeBD::buscarUsuario($_POST['cedula']);
 
-        /*$one = 66;
-        $var=ConectordeBD::removerUsuario($one);*/
-        echo $var;
 
     }
 
@@ -104,14 +105,7 @@ if($_POST) {
                         </tr>
                         <tr>
                             <td>Tipo de Usuario</td>
-                            <br/>
-                            <td>
-                                <select name="TipoPuesto" id="TipoPuesto">
-                                    <option value="Puesto">--Seleccionar Puesto--</option>
-                                    <option value="Administrador">Administrador</option>
-                                    <option value="Operador">Operador</option>
-                                </select>
-                            </td>
+                            <td><input type="text" name="TipoPuesto"/> </td>
                         </tr>
                         <tr>
                             <td>
@@ -122,19 +116,30 @@ if($_POST) {
                             </td>
                         </tr>
                     </table>
-                    <?php if($_POST) { ?>
-                        <ul class="mensajeError">
-                            <?php
-                            if(sizeof($arrErrores) > 0){
-                                foreach($arrErrores as $strError) {
-                                    echo("<li>$strError</li>");
-                                }
+
+                </form>
+                <?php if($_POST) { ?>
+                    <ul class="mensajeError">
+                        <?php
+                        if(sizeof($arrErrores) > 0){
+                            foreach($arrErrores as $strError) {
+                                echo("<li>$strError</li>");
+                            }
+                        }else{
+
+                            foreach($rows as $row) {
+                                echo "Usuario Ingresado al Sistema<br>";
+                                echo "*ID: {$row["idUsuario"]}<br>";
+                                echo "*Nombre: {$row["Nombre"]}<br>";
+                                echo "*Apellido: {$row["Apellidos"]}<br>";
+                                echo "*Estado: {$row["Estado"]}<br>";
                             }
 
-                            ?>
-                        </ul>
-                    <?php } ?>
-                </form>
+
+                        }
+                        ?>
+                    </ul>
+                <?php } ?>
             </fieldset>
         </div>
     </div>

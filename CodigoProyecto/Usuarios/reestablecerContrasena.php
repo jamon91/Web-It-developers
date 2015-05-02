@@ -7,8 +7,14 @@ require_once("../lib/ConnectordeDatos.php");
 if($_POST) {
 
 
+    if($_POST['accion']=== 'modificar'){
+
+        ConectordeBD::cambiarClave($_POST['cedula']);
+        $rows=ConectordeBD::buscarUsuario($_POST['cedula']);
+    }
+
     $arrErrores = array();
-    var_dump($_POST);
+
 
     $valCedula = Validation::noEstaVacio("Cedula",$_POST['cedula']);
     if(is_array($valCedula)){
@@ -51,10 +57,14 @@ if($_POST) {
                     </tr>
                     <tr>
                         <td>
+                            <input type="hidden" name="accion" value="modificar">
                             <input type="submit" value="Enviar Datos">
                             <input type="reset" name="txtLimpiar" value="Limpiar" onClick="PoneCursor()" />
                         </td>
+
                     </tr>
+
+
                 </table>
                 <?php if($_POST) { ?>
                     <ul class="mensajeError">
@@ -63,7 +73,19 @@ if($_POST) {
                             foreach($arrErrores as $strError) {
                                 echo("<li>$strError</li>");
                             }
+                        }else{
+
+
+                            foreach($rows as $row) {
+                                echo "Usuario con nueva Clave: <br>";
+                                echo "*ID: {$row["idUsuario"]}<br>";
+                                echo "*Nombre: {$row["Nombre"]}<br>";
+                                echo "*Apellido: {$row["Apellidos"]}<br>";
+                                echo "*Estado: {$row["Estado"]}<br>";
+                                echo "Nueva clave: {$row["Password"]}";
+                            }
                         }
+
                         ?>
                     </ul>
                 <?php } ?>

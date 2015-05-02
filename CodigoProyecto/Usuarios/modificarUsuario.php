@@ -1,5 +1,7 @@
 <?php
 require_once("../lib/Validation.php");
+require_once("../lib/ConnectordeDatos.php");
+
 if($_POST) {
 
     if($_POST['accion']=== 'modificar'){
@@ -7,7 +9,7 @@ if($_POST) {
         ConectordeBD::modificarUsuario($_POST['cedula'],$_POST['estadoUsuario'],$_POST['tipoPuesto']);
     }
     $arrErrores = array();
-    var_dump($_POST);
+
 
     $valCedula = Validation::noEstaVacio("Cedula",$_POST['cedula']);
     if(is_array($valCedula)){

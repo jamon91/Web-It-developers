@@ -37,8 +37,8 @@ class Validation {
      */
 
     static function esAlfanumerico ($nombreCampo,$contenido) {
-        echo 'valor de $contenido ';
-        var_dump($contenido);
+
+
         if(preg_match("|^[0-9a-zA-Z ]*$|",$contenido)){
         }
         else {
@@ -54,8 +54,8 @@ class Validation {
      */
 
     static function tieneXLongitud($nombreCampo,$contenido) {
-        echo 'valor de $contenido ';
-        var_dump($contenido);
+
+
         if (strlen($contenido) > 9){
             return array('resultado'=>false,
                 'mensajeError' => "La longitud de la $nombreCampo no debe ser tan larga.",
@@ -72,8 +72,7 @@ class Validation {
      */
 
     static function esNumerico($nombreCampo,$contenido) {
-        echo 'valor de $contenido ';
-        var_dump($contenido);
+
         if($contenido = (is_numeric($contenido))){
         }
         else {
@@ -92,8 +91,8 @@ class Validation {
 
     static function esEmail($nombreCampo,$contenido) {
         $bEsEmail = filter_var($contenido,FILTER_VALIDATE_EMAIL);
-        echo 'valor de $bEsEmail ';
-        var_dump($bEsEmail);
+
+
         if($bEsEmail === false){
             return array('resultado'=>false,
                 'mensajeError' => "El formato del campo $nombreCampo es inválido.",
@@ -109,8 +108,7 @@ class Validation {
      */
 
     static function esSoloAlfa ($nombreCampo,$contenido) {
-        echo 'valor de $contenido ';
-        var_dump($contenido);
+
         if(preg_match("|^[a-zA-Z ]*$|",$contenido)){
         }
         else {

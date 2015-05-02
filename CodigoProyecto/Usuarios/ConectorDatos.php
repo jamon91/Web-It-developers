@@ -27,13 +27,18 @@
              $dbh->exec($sql);
                 echo "New record created successfully<br/>";
 
-            $sql = 'SELECT idUsuario,Nombre,Password FROM Usuario';
+            $sql = "SELECT idUsuario,Nombre,Password FROM Usuario where Nombre ='Joel' ";
 
             foreach ($dbh->query($sql) as $row) {
-                print  "id " . $row['idUsuario'] . "\n";
+                print  "<br>id " . $row['idUsuario'] . "\n";
                 print  "cantidad " . $row['Nombre'] . "\n";
                 print  "Sesion " . $row['Password'] . "\n";
             }
+
+
+
+
+
 
             $sql = 'TRUNCATE TABLE carrito';
             $dbh->query($sql);
